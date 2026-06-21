@@ -1,0 +1,162 @@
+{
+  "name": "read-email-filing-rules",
+  "enabled": true,
+  "defaultAction": "none",
+  "rules": [
+    {
+      "id": "rule-001",
+      "enabled": true,
+      "priority": 1,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "domains": ["@ct.gov"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Accounts/St of CT"
+      }
+    },
+    {
+      "id": "rule-002",
+      "enabled": true,
+      "priority": 2,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "domains": ["@panynj.gov)"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Accounts/PANNYNJ"
+      }
+    },
+    {
+      "id": "rule-003",
+      "enabled": true,
+      "priority": 3,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "domains": ["@vermont.com"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Accounts/St of VT"
+      }
+    },
+    {
+      "id": "rule-004",
+      "enabled": true,
+      "priority": 4,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "emails": [
+            "ericjacobsen@microsoft.com",
+            "brandonbrin@microsoft.com",
+            "paulmccabe@microsoft.com",
+            "Sam.Raymond@microsoft.com",
+            "saraymon@microsoft.com",
+            "yschwartz@microsoft.com"
+          ]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/NE SLG Team"
+      }
+    },
+    {
+      "id": "rule-005",
+      "enabled": true,
+      "priority": 5,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "emails": [
+            "joshuaklein@microsoft.com",
+            "abrockwell@microsoft.com",
+            "Stephon.Bowden@microsoft.com",
+            "timfairlie@microsoft.com",
+            "Baileythomas@microsoft.com"
+          ]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/NE EDU Team"
+      }
+    },
+    {
+      "id": "rule-006",
+      "enabled": true,
+      "priority": 6,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "domains": ["@URMC.Rochester.edu"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Accounts/U of Rochester"
+      }
+    },
+    {
+      "id": "rule-007",
+      "enabled": true,
+      "priority": 7,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "emails": ["kevin.chin@microsoft.com"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Kevin Chin"
+      }
+    },
+    {
+      "id": "rule-008",
+      "enabled": true,
+      "priority": 8,
+      "conditions": {
+        "isRead": true,
+        "isPinned": false,
+        "from": {
+          "domains": ["@newhaven.edu"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Accounts/U of NewHaven"
+      }
+    },
+    {
+      "id": "rule-009",
+      "enabled": true,
+      "priority": 9,
+      "conditions": {
+        "from": {
+          "domains": ["@powerbi.com", "@sharepointonline.com"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Delete"
+      }
+    }
+  ]
+}

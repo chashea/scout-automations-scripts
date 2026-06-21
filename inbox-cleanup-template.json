@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "enabled": true,
+  "defaultAction": "none",
+  "rules": [
+    {
+      "id": "rule-001",
+      "enabled": true,
+      "priority": 1,
+      "conditions": {
+        "isRead": true,
+        "isFlagged": false,
+        "from": {
+          "emails": [],
+          "domains": []
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": ""
+      }
+    }
+  ]
+}
