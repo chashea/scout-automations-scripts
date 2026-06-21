@@ -1,10 +1,15 @@
 {
   "name": "read-email-filing-rules",
   "enabled": true,
+  "schedule": {
+    "type": "cron",
+    "expression": "0 23 * * 0",
+    "timezone": "America/New_York"
+  },
   "defaultAction": "none",
   "rules": [
     {
-      "id": "rule-001",
+      "id": "st-of-ct-routing",
       "enabled": true,
       "priority": 1,
       "conditions": {
@@ -20,7 +25,7 @@
       }
     },
     {
-      "id": "rule-002",
+      "id": "pannynj-routing",
       "enabled": true,
       "priority": 2,
       "conditions": {
@@ -36,7 +41,7 @@
       }
     },
     {
-      "id": "rule-003",
+      "id": "st-of-vt-routing",
       "enabled": true,
       "priority": 3,
       "conditions": {
@@ -52,7 +57,7 @@
       }
     },
     {
-      "id": "rule-004",
+      "id": "ne-slg-team-routing",
       "enabled": true,
       "priority": 4,
       "conditions": {
@@ -75,7 +80,7 @@
       }
     },
     {
-      "id": "rule-005",
+      "id": "ne-edu-team-routing",
       "enabled": true,
       "priority": 5,
       "conditions": {
@@ -97,7 +102,7 @@
       }
     },
     {
-      "id": "rule-006",
+      "id": "u-of-rochester-routing",
       "enabled": true,
       "priority": 6,
       "conditions": {
@@ -113,7 +118,7 @@
       }
     },
     {
-      "id": "rule-007",
+      "id": "kevin-chin-routing",
       "enabled": true,
       "priority": 7,
       "conditions": {
@@ -129,7 +134,7 @@
       }
     },
     {
-      "id": "rule-008",
+      "id": "u-of-newhaven-routing",
       "enabled": true,
       "priority": 8,
       "conditions": {
@@ -145,7 +150,7 @@
       }
     },
     {
-      "id": "rule-009",
+      "id": "powerbi-sharepoint-delete-routing",
       "enabled": true,
       "priority": 9,
       "conditions": {
@@ -156,6 +161,81 @@
       "action": {
         "type": "move",
         "destinationFolder": "Delete"
+      }
+    },
+    {
+      "id": "bot-and-noreply-to-digest",
+      "enabled": true,
+      "priority": 2,
+      "conditions": {
+        "received": {
+          "type": "relative",
+          "last": {
+            "value": 30,
+            "unit": "days"
+          }
+        },
+        "from": {
+          "addressContainsAny": ["noreply", "no-reply", "bot", "notification"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Misc/Digest",
+        "markRead": true
+      }
+    },
+    {
+      "id": "expense-mail-filing",
+      "enabled": true,
+      "priority": 3,
+      "conditions": {
+        "isRead": true,
+        "subject": {
+          "containsAny": ["invoice", "receipt", "expense", "reimbursement"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Expense"
+      }
+    },
+    {
+      "id": "security-alerts-routing",
+      "enabled": true,
+      "priority": 4,
+      "conditions": {
+        "subject": {
+          "containsAny": ["alert", "security", "defender", "incident"]
+        },
+        "from": {
+          "addressContainsAny": ["mssecurity-noreply", "azure-noreply", "s360-noreply"]
+        }
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Inbox/Security Enablement",
+        "markRead": false
+      }
+    },
+    {
+      "id": "old-read-inbox-to-archive",
+      "enabled": true,
+      "priority": 99,
+      "conditions": {
+        "isRead": true,
+        "received": {
+          "type": "relative",
+          "olderThan": {
+            "value": 14,
+            "unit": "days"
+          }
+        },
+        "currentFolder": "Inbox"
+      },
+      "action": {
+        "type": "move",
+        "destinationFolder": "Archive"
       }
     }
   ]
