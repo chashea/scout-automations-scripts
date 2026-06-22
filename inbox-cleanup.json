@@ -22,7 +22,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "St of CT"
+        "destinationFolder": "Inbox/Accounts/St of CT"
       }
     },
     {
@@ -39,7 +39,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "PANYNJ"
+        "destinationFolder": "Inbox/Accounts/PANYNJ"
       }
     },
     {
@@ -56,7 +56,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "St of VT"
+        "destinationFolder": "Inbox/Accounts/St of VT"
       }
     },
     {
@@ -80,7 +80,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "NE SLG Team"
+        "destinationFolder": "Inbox/NE SLG Team"
       }
     },
     {
@@ -103,7 +103,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "NE EDU Team"
+        "destinationFolder": "Inbox/NE EDU Team"
       }
     },
     {
@@ -120,7 +120,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "U of Rochester"
+        "destinationFolder": "Inbox/Accounts/U of Rochester"
       }
     },
     {
@@ -137,7 +137,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "Kevin Chin"
+        "destinationFolder": "Inbox/Kevin Chin"
       }
     },
     {
@@ -154,7 +154,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "U of NewHaven"
+        "destinationFolder": "Inbox/Accounts/U of NewHaven"
       }
     },
     {
@@ -195,7 +195,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "Digest",
+        "destinationFolder": "Inbox/Misc/Digest",
         "markRead": true
       }
     },
@@ -213,7 +213,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "Expense"
+        "destinationFolder": "Inbox/Expense"
       }
     },
     {
@@ -233,7 +233,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "Security Enablement",
+        "destinationFolder": "Inbox/Security Enablement",
         "markRead": false
       }
     },
