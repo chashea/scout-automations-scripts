@@ -22,7 +22,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAQe0v3WAAA"
+        "destinationFolder": "Inbox/Accounts/St of CT"
       }
     },
     {
@@ -39,7 +39,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAQe0v3YAAA"
+        "destinationFolder": "Inbox/Accounts/PANYNJ"
       }
     },
     {
@@ -56,7 +56,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAQvc_NEAAA"
+        "destinationFolder": "Inbox/Accounts/St of VT"
       }
     },
     {
@@ -80,7 +80,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAQGxwzFAAA"
+        "destinationFolder": "Inbox/NE SLG Team"
       }
     },
     {
@@ -103,7 +103,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAQvc_NFAAA"
+        "destinationFolder": "Inbox/NE EDU Team"
       }
     },
     {
@@ -120,7 +120,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAQvc_NGAAA"
+        "destinationFolder": "Inbox/Accounts/U of Rochester"
       }
     },
     {
@@ -137,7 +137,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAABlA9kAAA"
+        "destinationFolder": "Inbox/Kevin Chin"
       }
     },
     {
@@ -154,7 +154,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAQvc_NHAAA"
+        "destinationFolder": "Inbox/Accounts/U of NewHaven"
       }
     },
     {
@@ -195,7 +195,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAACqt-uAAA",
+        "destinationFolder": "Inbox/Misc/Digest",
         "markRead": true
       }
     },
@@ -213,7 +213,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAGWhdpRAAA"
+        "destinationFolder": "Inbox/Expense"
       }
     },
     {
@@ -233,7 +233,7 @@
       },
       "action": {
         "type": "move",
-        "destinationFolder": "AAMkAGYzNTc0N2UxLTdkMWQtNGZmMS1iMmI5LTAyN2NkNTI0OTBmMgAuAAAAAAD0fW0uQPoyTaQVlu9GUAk2AQCUqOPi_AE6RIvJq9VmMHz_AAFEAnrtAAA",
+        "destinationFolder": "Inbox/Security Enablement",
         "markRead": false
       }
     },
