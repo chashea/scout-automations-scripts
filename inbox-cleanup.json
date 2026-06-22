@@ -13,6 +13,7 @@
       "enabled": true,
       "priority": 1,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
@@ -29,15 +30,16 @@
       "enabled": true,
       "priority": 2,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
-          "domains": ["@panynj.gov)"]
+          "domains": ["@panynj.gov"]
         }
       },
       "action": {
         "type": "move",
-        "destinationFolder": "Inbox/Accounts/PANNYNJ"
+        "destinationFolder": "Inbox/Accounts/PANYNJ"
       }
     },
     {
@@ -45,6 +47,7 @@
       "enabled": true,
       "priority": 3,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
@@ -61,6 +64,7 @@
       "enabled": true,
       "priority": 4,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
@@ -68,7 +72,7 @@
             "ericjacobsen@microsoft.com",
             "brandonbrin@microsoft.com",
             "paulmccabe@microsoft.com",
-            "Sam.Raymond@microsoft.com",
+            "sam.raymond@microsoft.com",
             "saraymon@microsoft.com",
             "yschwartz@microsoft.com"
           ]
@@ -84,15 +88,16 @@
       "enabled": true,
       "priority": 5,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
           "emails": [
             "joshuaklein@microsoft.com",
             "abrockwell@microsoft.com",
-            "Stephon.Bowden@microsoft.com",
+            "stephon.bowden@microsoft.com",
             "timfairlie@microsoft.com",
-            "Baileythomas@microsoft.com"
+            "baileythomas@microsoft.com"
           ]
         }
       },
@@ -106,10 +111,11 @@
       "enabled": true,
       "priority": 6,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
-          "domains": ["@URMC.Rochester.edu"]
+          "domains": ["@urmc.rochester.edu"]
         }
       },
       "action": {
@@ -122,6 +128,7 @@
       "enabled": true,
       "priority": 7,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
@@ -138,6 +145,7 @@
       "enabled": true,
       "priority": 8,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
         "isPinned": false,
         "from": {
@@ -154,20 +162,26 @@
       "enabled": true,
       "priority": 9,
       "conditions": {
+        "currentFolder": "Inbox",
+        "isRead": true,
+        "isPinned": false,
         "from": {
           "domains": ["@powerbi.com", "@sharepointonline.com"]
         }
       },
       "action": {
         "type": "move",
-        "destinationFolder": "Delete"
+        "destinationFolder": "Deleted Items"
       }
     },
     {
       "id": "bot-and-noreply-to-digest",
       "enabled": true,
-      "priority": 2,
+      "priority": 10,
       "conditions": {
+        "currentFolder": "Inbox",
+        "isRead": true,
+        "isPinned": false,
         "received": {
           "type": "relative",
           "last": {
@@ -188,9 +202,11 @@
     {
       "id": "expense-mail-filing",
       "enabled": true,
-      "priority": 3,
+      "priority": 11,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
+        "isPinned": false,
         "subject": {
           "containsAny": ["invoice", "receipt", "expense", "reimbursement"]
         }
@@ -203,8 +219,11 @@
     {
       "id": "security-alerts-routing",
       "enabled": true,
-      "priority": 4,
+      "priority": 12,
       "conditions": {
+        "currentFolder": "Inbox",
+        "isRead": true,
+        "isPinned": false,
         "subject": {
           "containsAny": ["alert", "security", "defender", "incident"]
         },
@@ -223,15 +242,16 @@
       "enabled": true,
       "priority": 99,
       "conditions": {
+        "currentFolder": "Inbox",
         "isRead": true,
+        "isPinned": false,
         "received": {
           "type": "relative",
           "olderThan": {
             "value": 14,
             "unit": "days"
           }
-        },
-        "currentFolder": "Inbox"
+        }
       },
       "action": {
         "type": "move",
